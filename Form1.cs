@@ -6,5 +6,10 @@ namespace PROJEKT_T3A_RP
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fgh
+        }
     }
 }
