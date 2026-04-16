@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHlavniMenu));
             labelNazev = new Label();
             tlacitkoNovaHra = new Button();
             tlacitkoOAplikaci = new Button();
@@ -37,7 +38,9 @@
             // labelNazev
             // 
             labelNazev.Dock = DockStyle.Top;
-            labelNazev.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            labelNazev.Font = new Font("Snap ITC", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelNazev.ForeColor = SystemColors.ControlDarkDark;
+            labelNazev.Image = (Image)resources.GetObject("labelNazev.Image");
             labelNazev.Location = new Point(0, 0);
             labelNazev.Name = "labelNazev";
             labelNazev.Size = new Size(984, 120);
@@ -47,46 +50,56 @@
             // 
             // tlacitkoNovaHra
             // 
-            tlacitkoNovaHra.Font = new Font("Segoe UI", 16F);
-            tlacitkoNovaHra.Location = new Point(395, 241);
+            tlacitkoNovaHra.BackColor = SystemColors.ControlLightLight;
+            tlacitkoNovaHra.FlatStyle = FlatStyle.Flat;
+            tlacitkoNovaHra.Font = new Font("Snap ITC", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tlacitkoNovaHra.ForeColor = SystemColors.ControlDarkDark;
+            tlacitkoNovaHra.Location = new Point(315, 274);
             tlacitkoNovaHra.Name = "tlacitkoNovaHra";
-            tlacitkoNovaHra.Size = new Size(200, 60);
-            tlacitkoNovaHra.TabIndex = 1;
+            tlacitkoNovaHra.Size = new Size(350, 70);
+            tlacitkoNovaHra.TabIndex = 2;
             tlacitkoNovaHra.Text = "Nová hra";
-            tlacitkoNovaHra.UseVisualStyleBackColor = true;
-            tlacitkoNovaHra.Click += tlacitkoNovaHra_Click;
+            tlacitkoNovaHra.UseVisualStyleBackColor = false;
+            tlacitkoNovaHra.Click += tlacitkoNovaHra_Click_1;
             // 
             // tlacitkoOAplikaci
             // 
-            tlacitkoOAplikaci.Font = new Font("Segoe UI", 16F);
-            tlacitkoOAplikaci.Location = new Point(395, 318);
+            tlacitkoOAplikaci.BackColor = SystemColors.ControlLightLight;
+            tlacitkoOAplikaci.FlatStyle = FlatStyle.Flat;
+            tlacitkoOAplikaci.Font = new Font("Snap ITC", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tlacitkoOAplikaci.ForeColor = SystemColors.ControlDarkDark;
+            tlacitkoOAplikaci.Location = new Point(315, 350);
             tlacitkoOAplikaci.Name = "tlacitkoOAplikaci";
-            tlacitkoOAplikaci.Size = new Size(200, 60);
-            tlacitkoOAplikaci.TabIndex = 2;
+            tlacitkoOAplikaci.Size = new Size(350, 70);
+            tlacitkoOAplikaci.TabIndex = 3;
             tlacitkoOAplikaci.Text = "O aplikaci";
-            tlacitkoOAplikaci.UseVisualStyleBackColor = true;
-            tlacitkoOAplikaci.Click += tlacitkoOAplikaci_Click;
+            tlacitkoOAplikaci.UseVisualStyleBackColor = false;
+            tlacitkoOAplikaci.Click += tlacitkoOAplikaci_Click_1;
             // 
             // tlacitkoKonec
             // 
-            tlacitkoKonec.Font = new Font("Segoe UI", 16F);
-            tlacitkoKonec.Location = new Point(395, 395);
+            tlacitkoKonec.BackColor = SystemColors.ControlLightLight;
+            tlacitkoKonec.FlatStyle = FlatStyle.Flat;
+            tlacitkoKonec.Font = new Font("Snap ITC", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tlacitkoKonec.ForeColor = SystemColors.ControlDarkDark;
+            tlacitkoKonec.Location = new Point(315, 426);
             tlacitkoKonec.Name = "tlacitkoKonec";
-            tlacitkoKonec.Size = new Size(200, 60);
-            tlacitkoKonec.TabIndex = 3;
+            tlacitkoKonec.Size = new Size(350, 70);
+            tlacitkoKonec.TabIndex = 4;
             tlacitkoKonec.Text = "Konec";
-            tlacitkoKonec.UseVisualStyleBackColor = true;
-            tlacitkoKonec.Click += tlacitkoKonec_Click;
+            tlacitkoKonec.UseVisualStyleBackColor = false;
+            tlacitkoKonec.Click += tlacitkoKonec_Click_1;
             // 
             // FormHlavniMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(984, 661);
             Controls.Add(tlacitkoKonec);
             Controls.Add(tlacitkoOAplikaci);
-            Controls.Add(tlacitkoNovaHra);
             Controls.Add(labelNazev);
+            Controls.Add(tlacitkoNovaHra);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             Name = "FormHlavniMenu";
@@ -98,8 +111,8 @@
         #endregion
 
         private Label labelNazev;
-        private Button tlacitkoNovaHra;
-        private Button tlacitkoOAplikaci;
         private Button tlacitkoKonec;
+        private Button tlacitkoOAplikaci;
+        private Button tlacitkoNovaHra;
     }
 }
