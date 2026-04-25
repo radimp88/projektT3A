@@ -83,52 +83,61 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.BackgroundImage = (Image)resources.GetObject("menuStrip1.BackgroundImage");
             menuStrip1.Items.AddRange(new ToolStripItem[] { hraToolStripMenuItem, nápovědaToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(984, 24);
+            menuStrip1.Size = new Size(984, 25);
             menuStrip1.TabIndex = 3;
             menuStrip1.Text = "menuStrip1";
             // 
             // hraToolStripMenuItem
             // 
             hraToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuNovaHra, menuZpet, menuKonec });
+            hraToolStripMenuItem.Font = new Font("Snap ITC", 9F);
+            hraToolStripMenuItem.ForeColor = SystemColors.ControlDarkDark;
             hraToolStripMenuItem.Name = "hraToolStripMenuItem";
-            hraToolStripMenuItem.Size = new Size(38, 20);
+            hraToolStripMenuItem.Size = new Size(46, 21);
             hraToolStripMenuItem.Text = "Hra";
             // 
             // menuNovaHra
             // 
+            menuNovaHra.ForeColor = SystemColors.ControlDarkDark;
             menuNovaHra.Name = "menuNovaHra";
-            menuNovaHra.Size = new Size(149, 22);
+            menuNovaHra.Size = new Size(180, 22);
             menuNovaHra.Text = "Nová Hra";
             menuNovaHra.Click += menuNovaHra_Click;
             // 
             // menuZpet
             // 
+            menuZpet.ForeColor = SystemColors.ControlDarkDark;
             menuZpet.Name = "menuZpet";
-            menuZpet.Size = new Size(149, 22);
+            menuZpet.Size = new Size(180, 22);
             menuZpet.Text = "Zpět do menu";
             menuZpet.Click += menuZpet_Click;
             // 
             // menuKonec
             // 
+            menuKonec.ForeColor = SystemColors.ControlDarkDark;
             menuKonec.Name = "menuKonec";
-            menuKonec.Size = new Size(149, 22);
+            menuKonec.Size = new Size(180, 22);
             menuKonec.Text = "Konec";
             menuKonec.Click += menuKonec_Click;
             // 
             // nápovědaToolStripMenuItem
             // 
             nápovědaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuOaplikaci });
+            nápovědaToolStripMenuItem.Font = new Font("Snap ITC", 9F);
+            nápovědaToolStripMenuItem.ForeColor = SystemColors.ControlDarkDark;
             nápovědaToolStripMenuItem.Name = "nápovědaToolStripMenuItem";
-            nápovědaToolStripMenuItem.Size = new Size(73, 20);
+            nápovědaToolStripMenuItem.Size = new Size(86, 21);
             nápovědaToolStripMenuItem.Text = "Nápověda";
             // 
             // menuOaplikaci
             // 
+            menuOaplikaci.ForeColor = SystemColors.ControlDarkDark;
             menuOaplikaci.Name = "menuOaplikaci";
-            menuOaplikaci.Size = new Size(126, 22);
+            menuOaplikaci.Size = new Size(180, 22);
             menuOaplikaci.Text = "O aplikaci";
             menuOaplikaci.Click += menuOaplikaci_Click;
             // 
@@ -138,7 +147,7 @@
             labelSlovo.Font = new Font("Snap ITC", 24F);
             labelSlovo.ForeColor = SystemColors.ControlDarkDark;
             labelSlovo.Image = (Image)resources.GetObject("labelSlovo.Image");
-            labelSlovo.Location = new Point(0, 24);
+            labelSlovo.Location = new Point(0, 25);
             labelSlovo.Name = "labelSlovo";
             labelSlovo.Size = new Size(984, 79);
             labelSlovo.TabIndex = 4;
